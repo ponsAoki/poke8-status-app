@@ -1,0 +1,19 @@
+{
+    "name": "poke6",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./backend/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@bitbucket.org/ponsAoki/poke8-status-app.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://bitbucket.org/ponsAoki/poke8-status-app/issues"
+    },
+    "homepage": "https://bitbucket.org/ponsAoki/poke8-status-app#readme"
+}
