@@ -18,12 +18,7 @@ app.use(cors());
 /* データの取得 */
 app.post("/list", (req, res) => {
     //データベース接続
-    MongoClient.connect('process.env.DB_URI', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: true,
-        useCreateIndex: true
-    }, (err, db) => {
+    MongoClient.connect('process.env.DB_URI', (err, db) => {
         if (err) throw err;
         console.log("データベース接続に成功しました")
             //取得
