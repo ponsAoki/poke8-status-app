@@ -5,6 +5,12 @@ const cors = require("cors");
 const MongoClient = require('mongodb').MongoClient;
 const port = process.env.PORT || 3005
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(__dirname + '/dist/'))
+    app.get('*', (req, res) => {
+        res.sendFile(__dirname + '/dist/index.html')
+    })
+}
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
@@ -27,12 +33,6 @@ app.post("/list", (req, res) => {
 })
 
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(__dirname + '/dist/'))
-    app.get('*', (req, res) => {
-        res.sendFile(__dirname + '/dist/index.html')
-    })
-}
 
 
 app.listen(port, () => {
