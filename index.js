@@ -18,7 +18,7 @@ app.use(cors());
 /* データの取得 */
 app.post("/list", (req, res) => {
     //データベース接続
-    MongoClient.connect('mongodb://localhost:27017/ポケモンDB', (err, db) => {
+    MongoClient.connect('process.env.DB_URI', (err, db) => {
         if (err) throw err;
         console.log("データベース接続に成功しました")
             //取得
