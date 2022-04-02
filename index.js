@@ -18,7 +18,9 @@ app.use(cors());
 /* データの取得 */
 app.post("/list", (req, res) => {
     //データベース接続
-    MongoClient.connect('mongodb://DB_URI', (err, db) => {
+    MongoClient.connect('mongodb://shogoPons:slowking179@poke1-shard-00-00.vidlt.mongodb.net:27017,poke1-shard-00-01.vidlt.mongodb.net:27017,poke1-shard-00-02.vidlt.mongodb.net:27017/ポケモンDB?ssl=true&replicaSet=atlas-g0nbee-shard-0&authSource=admin&retryWrites=true&w=majority', {
+        useNewUrlParser: true
+    }, (err, db) => {
         if (err) throw err;
         console.log("データベース接続に成功しました")
             //取得
