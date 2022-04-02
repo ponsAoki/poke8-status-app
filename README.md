@@ -31,3 +31,4 @@
 # poke8-status-spp
 # poke8-status-spp
 # poke8-status-spp
+# poke8-status-app
