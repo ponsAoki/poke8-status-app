@@ -18,7 +18,7 @@ app.use(cors());
 /* データの取得 */
 app.post("/list", (req, res) => {
     //データベース接続
-    MongoClient.connect('process.env.MONGODB_URL', {
+    MongoClient.connect(process.env.MONGODB_URL, {
         useNewUrlParser: true
     }, (err, db) => {
         if (err) throw err;
