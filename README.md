@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-# poke-status-app
-# poke-status-app
-# poke-status-app
-# poke-status-app
-# poke-status-app
-# poke-status-app
-# poke-status-app
-# poke-status-app
-# poke-status-app
-# poke-status-app
-# poke8-status-app
-# poke8-status-app
-# poke8-status-app
-# poke8-status-app
-=======
-
 # ポケモン剣盾 ステータス確認
 
 ## Requirement
@@ -23,4 +6,4 @@
   tailwindcss: 3.0.23,  
   ant-design-vue: 2.2.8,  
   webpack: 5.70.0
->>>>>>> origin/main
+
